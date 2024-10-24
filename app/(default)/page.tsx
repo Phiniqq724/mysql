@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Simple",
-  description: "Page description",
+  title: "Sperpart",
+  description: "XI RPL 4",
 };
 
 import Hero from "@/components/hero-home";
@@ -13,10 +13,10 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <BusinessCategories />
+      {/* <BusinessCategories /> */}
       <FeaturesPlanet />
       <LargeTestimonial />
-      <Cta />
+      {/* <Cta /> */}
     </>
   );
 }

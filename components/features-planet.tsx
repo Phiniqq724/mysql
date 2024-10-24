@@ -8,26 +8,37 @@ import PlanetTagImg04 from "@/public/images/planet-tag-04.png";
 
 export default function FeaturesPlanet() {
   return (
-    <section className="relative before:absolute before:inset-0 before:-z-20 before:bg-gray-900">
+    <section
+      className="relative before:absolute before:inset-0 before:-z-20 before:bg-gray-900"
+      id="about"
+    >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
-          <div className="mx-auto max-w-3xl pb-16 text-center md:pb-20">
+          <div className="mx-auto max-w-3xl pb-16 text-center md:pb-20 mt-8">
             <h2 className="text-3xl font-bold text-gray-200 md:text-4xl">
-              Simple helps your teams work more efficiently together
+              About Us
             </h2>
+            <p className="text-xl font-medium text-gray-300 text-center mt-8">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+              nostrum laudantium rem temporibus, et deserunt veniam ullam
+              voluptatem officia molestias vitae pariatur ipsam illum est
+              exercitationem quia, adipisci numquam perferendis non. Nihil rerum
+              incidunt cumque distinctio tempora deleniti vel dolore, at nemo
+              provident ratione dolores, eligendi vero nulla est praesentium
+              itaque tenetur officiis aliquid cum eum. Labore dolorum,
+              voluptatum obcaecati similique id iste possimus sed voluptatibus
+              vel tempore exercitationem, dolores error praesentium expedita
+              consectetur hic! Illum optio libero porro amet quae ad in
+              doloremque qui quasi. Totam, ipsam expedita architecto natus ipsa
+              explicabo voluptates deleniti, laboriosam necessitatibus sunt
+              debitis nobis?
+            </p>
           </div>
           {/* Planet */}
-          <div className="pb-16 md:pb-20" data-aos="zoom-y-out">
+          <div className="pb-8 md:pb-10" data-aos="zoom-y-out">
             <div className="text-center">
               <div className="relative inline-flex rounded-full before:absolute before:inset-0 before:-z-10 before:scale-[.85] before:animate-[pulse_4s_cubic-bezier(.4,0,.6,1)_infinite] before:bg-gradient-to-b before:from-blue-900 before:to-sky-700/50 before:blur-3xl after:absolute after:inset-0 after:rounded-[inherit] after:[background:radial-gradient(closest-side,theme(colors.blue.500),transparent)]">
-                <Image
-                  className="rounded-full bg-gray-900"
-                  src={PlanetImg}
-                  width={400}
-                  height={400}
-                  alt="Planet"
-                />
                 <div className="pointer-events-none" aria-hidden="true">
                   <Image
                     className="absolute -right-64 -top-20 z-10 max-w-none"
@@ -71,7 +82,7 @@ export default function FeaturesPlanet() {
             </div>
           </div>
           {/* Grid */}
-          <div className="grid overflow-hidden sm:grid-cols-2 lg:grid-cols-3 [&>*]:relative [&>*]:p-6 [&>*]:before:absolute [&>*]:before:bg-gray-800 [&>*]:before:[block-size:100vh] [&>*]:before:[inline-size:1px] [&>*]:before:[inset-block-start:0] [&>*]:before:[inset-inline-start:-1px] [&>*]:after:absolute [&>*]:after:bg-gray-800 [&>*]:after:[block-size:1px] [&>*]:after:[inline-size:100vw] [&>*]:after:[inset-block-start:-1px] [&>*]:after:[inset-inline-start:0] md:[&>*]:p-10">
+          {/* <div className="grid overflow-hidden sm:grid-cols-2 lg:grid-cols-3 [&>*]:relative [&>*]:p-6 [&>*]:before:absolute [&>*]:before:bg-gray-800 [&>*]:before:[block-size:100vh] [&>*]:before:[inline-size:1px] [&>*]:before:[inset-block-start:0] [&>*]:before:[inset-inline-start:-1px] [&>*]:after:absolute [&>*]:after:bg-gray-800 [&>*]:after:[block-size:1px] [&>*]:after:[inline-size:100vw] [&>*]:after:[inset-block-start:-1px] [&>*]:after:[inset-inline-start:0] md:[&>*]:p-10">
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
                 <svg
@@ -184,7 +195,7 @@ export default function FeaturesPlanet() {
                 sites, and more.
               </p>
             </article>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

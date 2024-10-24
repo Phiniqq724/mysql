@@ -1,9 +1,32 @@
-import Image from "next/image";
-import TestimonialImg from "@/public/images/large-testimonial.jpg";
+import gambar1 from "@/public/images/assets/1.jpg";
+import Picture from "./picture";
+import { PictureProps } from "./picture";
+import gambar2 from "@/public/images/assets/2.jpg";
+import gambar3 from "@/public/images/assets/3.jpg";
+import gambar4 from "@/public/images/assets/4.jpg";
+
+const galery: PictureProps[] = [
+  {
+    src: gambar1,
+    alt: "Galery",
+  },
+  {
+    src: gambar2,
+    alt: "Galery",
+  },
+  {
+    src: gambar3,
+    alt: "Galery",
+  },
+  {
+    src: gambar4,
+    alt: "Galery",
+  },
+];
 
 export default function LargeTestimonial() {
   return (
-    <section>
+    <section id="galery">
       <div className="mx-auto max-w-2xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
           <div className="space-y-3 text-center">
@@ -21,26 +44,12 @@ export default function LargeTestimonial() {
                   fill="#D1D5DB"
                 />
               </svg>
-              <Image
-                className="rounded-full"
-                src={TestimonialImg}
-                width={48}
-                height={48}
-                alt="Large testimonial"
-              />
             </div>
-            <p className="text-2xl font-bold text-gray-900">
-              “Simple has simplified my life in more ways than one. From
-              managing my sites to{" "}
-              <em className="italic text-gray-500">keeping track of tasks</em>,
-              it's become my go-to tool for everything.”
-            </p>
-            <div className="text-sm font-medium text-gray-500">
-              <span className="text-gray-700">Mary Sullivan</span>{" "}
-              <span className="text-gray-400">/</span>{" "}
-              <a className="text-blue-500" href="#0">
-                CTO at Microsoft
-              </a>
+            {/* Galery */}
+            <div className="grid grid-cols-2 gap-4 w-full items-center">
+              {galery.map((item, index) => (
+                <Picture key={index} src={item.src} alt={item.alt} />
+              ))}
             </div>
           </div>
         </div>
